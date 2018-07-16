@@ -13,6 +13,6 @@ app.use(bodyParser.urlencoded({
 
 var profiles = require('./profiles.js')(app);
 
-var port: process.env.PORT || 3000;
+var port = process.env.PORT || 3000;
 app.listen(port);
-console.log('Listening...');
+console.log('Listening on port: ', port);
